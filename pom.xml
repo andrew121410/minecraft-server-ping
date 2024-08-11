@@ -40,18 +40,28 @@
                         <configuration>
                             <relocations>
                                 <relocation>
-                                    <pattern>com.google.gson</pattern>
-                                    <shadedPattern>br.com.azalim.mcserverping.shaded.com.google.gson</shadedPattern>
+                                    <pattern>com.google.**</pattern>
+                                    <shadedPattern>br.com.azalim.mcserverping.shaded.com.google</shadedPattern>
                                 </relocation>
                                 <relocation>
-                                    <pattern>net.md_5.bungee.api</pattern>
-                                    <shadedPattern>br.com.azalim.mcserverping.shaded.net.md_5.bungee.api</shadedPattern>
+                                    <pattern>net.md_5.bungee.**</pattern>
+                                    <shadedPattern>br.com.azalim.mcserverping.shaded.net.md_5.bungee</shadedPattern>
                                 </relocation>
                                 <relocation>
                                     <pattern>org.xbill.DNS</pattern>
                                     <shadedPattern>br.com.azalim.mcserverping.shaded.org.xbill.DNS</shadedPattern>
                                 </relocation>
                             </relocations>
+                            <filters>
+                                <filter>
+                                    <artifact>*:*</artifact>
+                                    <excludes>
+                                        <exclude>META-INF/versions/9/module-info</exclude>
+                                        <exclude>META-INF/io.netty.versions.properties</exclude>
+                                        <exclude>META-INF/LICENSE</exclude>
+                                    </excludes>
+                                </filter>
+                            </filters>
                         </configuration>
                     </execution>
                 </executions>
@@ -73,7 +83,7 @@
             <artifactId>bungeecord-api</artifactId>
             <version>1.20-R0.2</version>
             <type>jar</type>
-            <scope>package</scope>
+            <scope>compile</scope>
         </dependency>
 
         <!-- Needed to resolve SRV records-->
@@ -81,7 +91,7 @@
             <groupId>dnsjava</groupId>
             <artifactId>dnsjava</artifactId>
             <version>3.6.1</version>
-            <scope>package</scope>
+            <scope>compile</scope>
         </dependency>
 
         <!-- Needed to handle Json in MCPing methods -->
@@ -89,7 +99,7 @@
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
             <version>2.11.0</version>
-            <scope>package</scope>
+            <scope>compile</scope>
         </dependency>
 
         <!-- Needed for MCPingOptions & MCPingResponse Annotations -->
@@ -98,6 +108,14 @@
             <artifactId>lombok</artifactId>
             <version>1.18.34</version>
             <scope>provided</scope>
+        </dependency>
+
+        <!-- Needed for Preconditions and other utilities -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>33.2.1-jre</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 </project>
