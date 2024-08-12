@@ -1,9 +1,8 @@
-/target
-
-# IntelliJ
-out/
+build/
+buildSrc/
+target/
 .idea/
-.idea_modules/
 *.iml
-*.ipr
-*.iws
+.gradle/
+*/target
+*/build
