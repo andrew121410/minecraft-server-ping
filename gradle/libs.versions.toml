@@ -1,5 +1,5 @@
 [versions]
-google-gson = "2.11.0"
+google-gson = "2.12.1"
 google-guava = "33.4.0-jre"
 dnsjava-dnsjava = "3.6.3"
 bungeecord-api = "1.21-R0.1-SNAPSHOT"
@@ -11,5 +11,5 @@ dnsjava-lib = { module = "dnsjava:dnsjava", version.ref = "dnsjava-dnsjava" }
 bungeecord-api-lib = { module = "net.md-5:bungeecord-api", version.ref = "bungeecord-api" }
 
 [plugins]
-freefair-lombok-plugin = { id = "io.freefair.lombok", version = "8.12" }
-shadow-plugin = { id = "com.gradleup.shadow", version = "8.3.5" }
+freefair-lombok-plugin = { id = "io.freefair.lombok", version = "8.12.1" }
+shadow-plugin = { id = "com.gradleup.shadow", version = "8.3.6" }
