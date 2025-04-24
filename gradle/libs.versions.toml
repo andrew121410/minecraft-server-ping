@@ -1,5 +1,5 @@
 [versions]
-google-gson = "2.13.0"
+google-gson = "2.13.1"
 google-guava = "33.4.8-jre"
 dnsjava-dnsjava = "3.6.3"
 bungeecord-api = "1.21-R0.3-SNAPSHOT"
