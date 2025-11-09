@@ -6,11 +6,11 @@ plugins {
 }
 
 group = "br.com.azalim"
-version = "1.0.9"
+version = "1.0.10"
 description = "A simple library to ping Minecraft servers"
 
-java.sourceCompatibility = JavaVersion.VERSION_17
-java.targetCompatibility = JavaVersion.VERSION_17
+java.sourceCompatibility = JavaVersion.VERSION_21
+java.targetCompatibility = JavaVersion.VERSION_21
 
 repositories {
     mavenCentral()
@@ -46,7 +46,7 @@ tasks {
 
     shadowJar {
         // This will relocate the dependencies to avoid conflicts
-        isEnableRelocation = true
+        enableAutoRelocation = true
         relocationPrefix = "br.com.azalim.mcserverping.shaded"
 
         exclude("META-INF/**")
