@@ -2,7 +2,7 @@
 google-gson = "2.13.2"
 google-guava = "33.5.0-jre"
 dnsjava-dnsjava = "3.6.3"
-bungeecord-api = "1.21-R0.3"
+bungeecord-api = "1.21-R0.4"
 
 [libraries]
 google-gson-lib = { module = "com.google.code.gson:gson", version.ref = "google-gson" }
@@ -12,4 +12,4 @@ bungeecord-api-lib = { module = "net.md-5:bungeecord-api", version.ref = "bungee
 
 [plugins]
 freefair-lombok-plugin = { id = "io.freefair.lombok", version = "9.1.0" }
-shadow-plugin = { id = "com.gradleup.shadow", version = "9.2.2" }
+shadow-plugin = { id = "com.gradleup.shadow", version = "9.3.0" }
