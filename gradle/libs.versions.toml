@@ -12,4 +12,4 @@ bungeecord-api-lib = { module = "net.md-5:bungeecord-api", version.ref = "bungee
 
 [plugins]
 freefair-lombok-plugin = { id = "io.freefair.lombok", version = "9.1.0" }
-shadow-plugin = { id = "com.gradleup.shadow", version = "9.3.0" }
+shadow-plugin = { id = "com.gradleup.shadow", version = "9.3.1" }
